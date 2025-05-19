@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/asudetopcu/Desktop/TranscriptionAPI/wwwroot/Uploads/test.mp3",
+      "PackagePath": "staticwebassets/Uploads/test.mp3"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.TranscriptionAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.TranscriptionAPI.props",
+      "PackagePath": "build\\TranscriptionAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.TranscriptionAPI.props",
+      "PackagePath": "buildMultiTargeting\\TranscriptionAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.TranscriptionAPI.props",
+      "PackagePath": "buildTransitive\\TranscriptionAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

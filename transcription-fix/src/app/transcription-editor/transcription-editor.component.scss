@@ -1,0 +1,22 @@
+.container {
+  max-width: 800px;
+}
+
+.card {
+  border-radius: 15px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+}
+
+audio {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+textarea {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  background-color: #f8f9fa;
+  resize: vertical;
+}

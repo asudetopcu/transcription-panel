@@ -1,0 +1,31 @@
+<div class="container mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="text-primary">İşlem Logları</h2>
+    <button class="btn btn-outline-secondary" (click)="fetchLogs()">Yenile</button>
+  </div>
+
+  <div *ngIf="logs.length === 0" class="alert alert-info text-center">
+    Henüz kayıtlı bir log bulunmamaktadır.
+  </div>
+
+  <div *ngIf="logs.length > 0" class="table-responsive">
+    <table class="table table-hover table-bordered align-middle shadow-sm">
+      <thead class="table-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Kullanıcı</th>
+          <th scope="col">İşlem</th>
+          <th scope="col">Zaman</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let log of logs; index as i">
+          <th scope="row">{{ i + 1 }}</th>
+          <td><span class="badge bg-dark">{{ log.Username }}</span></td>
+          <td>{{ log.Action }}</td>
+          <td>{{ log.Timestamp | date: 'medium' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

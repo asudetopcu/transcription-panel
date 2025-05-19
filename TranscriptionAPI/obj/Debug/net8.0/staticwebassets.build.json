@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "N55dRK7FYbciyMU8psepygcWbXCdhhPbMpJj8UaYPG8=",
+  "Source": "TranscriptionAPI",
+  "BasePath": "_content/TranscriptionAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TranscriptionAPI/wwwroot",
+      "Source": "TranscriptionAPI",
+      "ContentRoot": "/Users/asudetopcu/Desktop/TranscriptionAPI/wwwroot/",
+      "BasePath": "_content/TranscriptionAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/asudetopcu/Desktop/TranscriptionAPI/wwwroot/Uploads/test.mp3",
+      "SourceId": "TranscriptionAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/asudetopcu/Desktop/TranscriptionAPI/wwwroot/",
+      "BasePath": "_content/TranscriptionAPI",
+      "RelativePath": "Uploads/test.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Uploads/test.mp3"
+    }
+  ]
+}
