@@ -1,0 +1,37 @@
+.container {
+  max-width: 1100px;
+}
+
+.card {
+  border: none;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    color: #0d6efd;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+  audio {
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .btn {
+    font-weight: 500;
+  }
+}
+
+.alert {
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}

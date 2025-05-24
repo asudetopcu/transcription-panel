@@ -14,7 +14,6 @@ import { HttpClient } from '@angular/common/http';
 export class LoginComponent {
   username = '';
   password = '';
-  error = '';
   errorMessage = '';
 
   constructor(private http: HttpClient, private router: Router) {}
@@ -26,10 +25,10 @@ export class LoginComponent {
     }).subscribe({
       next: (res) => {
         localStorage.setItem('token', res.token);
-        this.router.navigate(['/transcription']);
+        this.router.navigate(['/files']);
       },
       error: (err) => {
-        this.error = 'Giriş başarısız';
+        this.errorMessage = 'Giriş başarısız';
       }
     });
   }

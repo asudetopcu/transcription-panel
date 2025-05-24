@@ -1,0 +1,24 @@
+<div class="container mt-4">
+  <h2 class="text-primary mb-4">🎵 Ses Dosyaları</h2>
+
+  <div *ngIf="audioFiles.length === 0" class="alert alert-warning text-center">
+    Henüz bir ses dosyası bulunmamaktadır.
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" *ngIf="audioFiles.length > 0">
+    <div class="col" *ngFor="let file of audioFiles">
+      <div class="card shadow-sm h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-primary">🎧 Dosya #{{ file.id }}</h5>
+          <p class="mb-2"><strong>Ad:</strong> {{ file.fileName || 'Belirtilmemiş' }}</p>
+
+          <audio class="w-100 mb-3" controls [src]="'http://localhost:5240/uploads/' + file.fileName"></audio>
+
+          <button class="btn btn-outline-primary mt-auto" (click)="goToEditor(file.id)">
+            Transkripsiyona Git
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

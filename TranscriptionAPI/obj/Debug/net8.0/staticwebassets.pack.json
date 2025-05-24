@@ -1,8 +1,16 @@
 {
   "Files": [
     {
-      "Id": "/Users/asudetopcu/Desktop/TranscriptionAPI/wwwroot/Uploads/test.mp3",
+      "Id": "/Users/asudetopcu/Desktop/transcription-panel/TranscriptionAPI/wwwroot/Uploads/test.mp3",
       "PackagePath": "staticwebassets/Uploads/test.mp3"
+    },
+    {
+      "Id": "/Users/asudetopcu/Desktop/transcription-panel/TranscriptionAPI/wwwroot/Uploads/test1.mp3",
+      "PackagePath": "staticwebassets/Uploads/test1.mp3"
+    },
+    {
+      "Id": "/Users/asudetopcu/Desktop/transcription-panel/TranscriptionAPI/wwwroot/Uploads/transcription.json",
+      "PackagePath": "staticwebassets/Uploads/transcription.json"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.TranscriptionAPI.Microsoft.AspNetCore.StaticWebAssets.props",

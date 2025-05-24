@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/asudetopcu/Desktop/TranscriptionAPI/TranscriptionAPI.csproj": {}
+    "/Users/asudetopcu/Desktop/transcription-panel/TranscriptionAPI/TranscriptionAPI.csproj": {}
   },
   "projects": {
-    "/Users/asudetopcu/Desktop/TranscriptionAPI/TranscriptionAPI.csproj": {
+    "/Users/asudetopcu/Desktop/transcription-panel/TranscriptionAPI/TranscriptionAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/asudetopcu/Desktop/TranscriptionAPI/TranscriptionAPI.csproj",
+        "projectUniqueName": "/Users/asudetopcu/Desktop/transcription-panel/TranscriptionAPI/TranscriptionAPI.csproj",
         "projectName": "TranscriptionAPI",
-        "projectPath": "/Users/asudetopcu/Desktop/TranscriptionAPI/TranscriptionAPI.csproj",
+        "projectPath": "/Users/asudetopcu/Desktop/transcription-panel/TranscriptionAPI/TranscriptionAPI.csproj",
         "packagesPath": "/Users/asudetopcu/.nuget/packages/",
-        "outputPath": "/Users/asudetopcu/Desktop/TranscriptionAPI/obj/",
+        "outputPath": "/Users/asudetopcu/Desktop/transcription-panel/TranscriptionAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/asudetopcu/.nuget/NuGet/NuGet.Config"

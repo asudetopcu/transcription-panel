@@ -81,11 +81,22 @@ namespace TranscriptionAPI.Controllers
 
         return Ok(logs);
     }
+    
+    [HttpGet("files")]
+        public IActionResult GetAudioFiles()
+        {
+            var files = _context.AudioFiles.ToList();
+            return Ok(files);
+        }
+
 
 
         private int GetUserId()
         {
-            return int.Parse(User.Claims.First(c => c.Type == System.Security.Claims.ClaimTypes.NameIdentifier).Value);
+            var claim = User.Claims.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.NameIdentifier);
+            if (claim == null) throw new Exception("Token'da kullanıcı kimliği (NameIdentifier) bulunamadı.");
+            return int.Parse(claim.Value);
         }
+
     }
 }

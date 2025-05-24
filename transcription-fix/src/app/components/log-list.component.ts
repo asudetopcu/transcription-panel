@@ -29,8 +29,12 @@ export class LogListComponent implements OnInit {
 
     this.http.get<any[]>('http://localhost:5240/api/transcription/logs', { headers })
       .subscribe({
-        next: res => this.logs = res,
-        error: err => console.error('Loglar alınamadı:', err)
+        next: res => {
+          console.log('Log verisi:', res);
+          this.logs = res;
+        },
+        error: err => console.error('Loglar alınamadı', err)
       });
+
   }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "REHW96GLZT4=",
+  "dgSpecHash": "2MfHCoux0bk=",
   "success": true,
-  "projectFilePath": "/Users/asudetopcu/Desktop/TranscriptionAPI/TranscriptionAPI.csproj",
+  "projectFilePath": "/Users/asudetopcu/Desktop/transcription-panel/TranscriptionAPI/TranscriptionAPI.csproj",
   "expectedPackageFiles": [
     "/Users/asudetopcu/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/asudetopcu/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

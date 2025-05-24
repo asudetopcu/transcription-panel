@@ -21,9 +21,9 @@
       <tbody>
         <tr *ngFor="let log of logs; index as i">
           <th scope="row">{{ i + 1 }}</th>
-          <td><span class="badge bg-dark">{{ log.Username }}</span></td>
-          <td>{{ log.Action }}</td>
-          <td>{{ log.Timestamp | date: 'medium' }}</td>
+          <td><span class="badge bg-dark">{{ log.username }}</span></td>
+          <td>{{ log.action }}</td>
+          <td>{{ log.timestamp | date: 'medium' }}</td>
         </tr>
       </tbody>
     </table>

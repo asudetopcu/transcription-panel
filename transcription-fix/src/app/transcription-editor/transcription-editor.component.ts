@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import {jwtDecode} from 'jwt-decode';
+import { ActivatedRoute, Router } from '@angular/router';
+import { jwtDecode } from 'jwt-decode';
 
 @Component({
   selector: 'app-transcription-editor',
@@ -12,18 +13,30 @@ import {jwtDecode} from 'jwt-decode';
   styleUrls: ['./transcription-editor.component.scss']
 })
 export class TranscriptionEditorComponent implements OnInit {
-  audioFileId = 1;
-  audioUrl = 'http://localhost:5240/Uploads/test.mp3';
+  audioFileId: number = 0;
+  audioUrl: string = '';
   transcriptionText = '';
   username = '';
   token: string | null = localStorage.getItem('token');
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
+  const id = this.route.snapshot.paramMap.get('id');
+  if (id) {
+    this.audioFileId = +id;
     this.decodeUser();
+    this.getAudioFile();
     this.getTranscription();
+  } else {
+    alert('Geçersiz ses dosyası ID\'si.');
   }
+}
+
 
   decodeUser() {
     if (this.token) {
@@ -39,6 +52,19 @@ export class TranscriptionEditorComponent implements OnInit {
         'Content-Type': 'application/json'
       })
     };
+  }
+
+  getAudioFile(): void {
+    this.http.get<any>(`http://localhost:5240/api/audio/${this.audioFileId}`, this.headers)
+      .subscribe({
+        next: res => {
+          this.audioUrl = `http://localhost:5240/${res.filePath}`;
+        },
+        error: err => {
+          console.warn('Ses dosyası alınamadı:', err);
+          alert("Ses dosyası bulunamadı.");
+        }
+      });
   }
 
   getTranscription(): void {
